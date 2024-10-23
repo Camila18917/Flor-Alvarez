@@ -53,7 +53,9 @@ button:active {
 /* HOME */
 
 .flor{
-    width: 55%;
+    width: 30rem;
+    margin-left: 20%;
+    margin-top: 2rem;
 }
 .p1{
  display: flex;
@@ -62,7 +64,8 @@ button:active {
     margin: 0%;
     margin-top: 8rem;
     margin-left: 4%;
-    margin-right: 4%;
+    margin-right: 10%;
+    max-width: 21rem;
     font-size: .8rem;
 }
 .texto1 p{
@@ -110,10 +113,23 @@ button:active {
 .contacto{
     display: flex;
     text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
 }
 .cc1{
    width: 50%;
    padding-right: 6rem;
+}
+.tituloc{
+    color:#357ABD;
+    font-size: 50px;
+} 
+.cc2{
+    margin-top: .4rem;
+}
+.cc2 a{
+    text-decoration: none;
+    color: rgb(151, 151, 151);
 }
 form input{
     width: 18rem;
@@ -145,4 +161,11 @@ form input{
 }
 #bc:active{
     background-color: #7444daba;
+}
+
+
+
+/* FOOTER */
+footer{
+    background-color: #100713;
 }
