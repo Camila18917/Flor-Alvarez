@@ -1,3 +1,4 @@
+/* NAVAR */
 function loadPage(pageUrl) {
     fetch(pageUrl)
         .then(response => {
@@ -43,7 +44,7 @@ document.getElementById('home').addEventListener('click', function() {
 
 
 
-
+/* FOOTER */
 class FooterComponent extends HTMLElement {
     connectedCallback() {
       this.innerHTML = 
@@ -58,7 +59,8 @@ class FooterComponent extends HTMLElement {
 
 
 
-  function can() {
+/* CANCIONES */
+function canciones() {
     fetch()
         .then(response => {
             if (!response.ok) {
@@ -69,7 +71,7 @@ class FooterComponent extends HTMLElement {
         .then(html => {
             document.getElementById('canciones').innerHTML = html;
             presentacion.style.display = 'none';
-            contentContainer.style.display = 'block';
+            canciones.style.display = 'block';
         })
         .catch(error => {
             console.error('Hubo un problema al cargar la página:', error);
@@ -77,10 +79,20 @@ class FooterComponent extends HTMLElement {
 }
 
 document.getElementById('album1').addEventListener('click', function() {
-    loadPage('album.html');
+    loadPage('album1.html');
 });
 
 document.getElementById('album2').addEventListener('click', function() {
     loadPage('album2.html');
+});
+
+    
+document.getElementById('home').addEventListener('click', function() {
+    const contentContainer = document.getElementById('canciones');
+    const presentacion = document.getElementById('presentacion');
+
+    canciones.style.display = 'none';
+    presentacion.style.display = 'flex';
+    
 });
 

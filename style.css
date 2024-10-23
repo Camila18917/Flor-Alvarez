@@ -134,7 +134,7 @@ button:active {
 }
 .al{
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 .album:hover{
     background-color:#000000c2;
@@ -145,6 +145,10 @@ button:active {
 }
 .album:hover {
     transform: none;
+}
+#canciones{
+    display:none;
+    margin-bottom: 2rem;
 }
 
 
@@ -203,6 +207,7 @@ form input{
 #bc:active{
     background-color: #7444daba;
 }
+
 
 
 
