@@ -60,8 +60,8 @@ class FooterComponent extends HTMLElement {
 
 
 /* CANCIONES */
-function canciones() {
-    fetch()
+function canciones(archivo) {
+    fetch(archivo)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error en la solicitud: ' + response.status);
@@ -71,7 +71,8 @@ function canciones() {
         .then(html => {
             document.getElementById('canciones').innerHTML = html;
             presentacion.style.display = 'none';
-            canciones.style.display = 'block';
+            document.getElementById("canciones").style.display = 'block';
+            console.log("ACA");
         })
         .catch(error => {
             console.error('Hubo un problema al cargar la página:', error);
