@@ -36,7 +36,7 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 button:hover {
-    background-color: #357ABD;
+    background-color: #57156b;
     transform: scale(1.1);
 }
 button:active {
@@ -104,6 +104,47 @@ button:active {
     width: 20rem;
     float: left;
     padding-right: .8rem;
+}
+
+
+
+
+
+/* ALBUNMES*/
+.buscadorc{
+    margin-top: 1rem;
+    margin: 0;
+    text-align: center;
+}
+.buscadorc input{
+    height: .4rem;
+}
+#bc2{
+    background-color: #570369e7;
+    margin-top: 3%;
+    height: 2.3rem;
+    border-radius: 5px;
+}
+#bc2:hover {
+    transform: none;
+}
+#bc2:active {
+    background-color: #2a063a
+    ;
+}
+.al{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.album:hover{
+    background-color:#000000c2;
+}
+.album img{
+    width: 10rem;
+    border: none;
+}
+.album:hover {
+    transform: none;
 }
 
 

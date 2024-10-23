@@ -38,6 +38,12 @@ document.getElementById('home').addEventListener('click', function() {
     
 });
 
+
+
+
+
+
+
 class FooterComponent extends HTMLElement {
     connectedCallback() {
       this.innerHTML = 
@@ -48,3 +54,33 @@ class FooterComponent extends HTMLElement {
   }
   customElements.define('footer-component', FooterComponent);
   
+
+
+
+
+  function can() {
+    fetch()
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error en la solicitud: ' + response.status);
+            }
+            return response.text();
+        })
+        .then(html => {
+            document.getElementById('canciones').innerHTML = html;
+            presentacion.style.display = 'none';
+            contentContainer.style.display = 'block';
+        })
+        .catch(error => {
+            console.error('Hubo un problema al cargar la página:', error);
+        });
+}
+
+document.getElementById('album1').addEventListener('click', function() {
+    loadPage('album.html');
+});
+
+document.getElementById('album2').addEventListener('click', function() {
+    loadPage('album2.html');
+});
+
