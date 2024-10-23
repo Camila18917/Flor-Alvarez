@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 1.5rem;
+    color: #ffffff;
+    background-color: #100713;
+}
+
+nav {
+    max-width: fit-content;
+    margin: 0 auto;
+    display: flex;
+}
+.nombre{
+    width: 20rem;
+    height:5rem;
+    text-align: left;
+    cursor: pointer;
+}
+.navar{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    justify-content: right;
+}
+button {
+    display: inline-block;
+    padding: .7rem 1.5rem;
+    margin: .2rem;
+    background-color:#100713 ;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+button:hover {
+    background-color: #357ABD;
+    transform: scale(1.1);
+}
+button:active {
+    background-color: #e756d6
+    ;
+}
+
+
+
+
+
+
+
+/* HOME */
+
+.flor{
+    width: 55%;
+}
+.p1{
+ display: flex;
+}
+.texto1{
+    margin: 0%;
+    margin-top: 8rem;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: .8rem;
+}
+.texto1 p{
+    color: rgb(151, 151, 151);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+#contentContainer {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s;
+    display: none;
+}
+#contentContainer p {
+    font-size: .9rem;
+    color: rgb(151, 151, 151);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+#contentContainer {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+
+
+/* SOBRE MI */
+.info{
+    margin-bottom: 5rem;
+}
+.flors{
+    width: 20rem;
+    float: left;
+    padding-right: .8rem;
+}
+
+
+
+
+/* CONTACTO */
+.contacto{
+    display: flex;
+    text-align: left;
+}
+.cc1{
+   width: 50%;
+   padding-right: 6rem;
+}
+form input{
+    width: 18rem;
+    height: 1rem;
+    background-color: #cc57f331;
+    color:white;
+    padding:3%;
+    margin: 2%;
+    margin-left: 0;
+    border-radius: 10px;
+    border-color: #100713;
+}
+#mensaje{
+    background-color: #cc57f331;
+    color:white;
+    padding:3%;
+    margin-top: 2%;
+    resize: none;
+    border-radius: 10px;
+    border-color: #100713;
+    font-family: 'Arial', sans-serif;
+}
+#bc{
+    background-color: #da44b926;
+    margin-top: 3%;
+}
+#bc:hover{
+    background-color: #da44baba;
+}
+#bc:active{
+    background-color: #7444daba;
+}
