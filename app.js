@@ -48,24 +48,35 @@ const toggleButton = document.getElementById('toggleMode');
 const body = document.body;
 
 toggleButton.addEventListener('click', () => {
-    // Alternar la clase 'dark-mode' en el body
     body.classList.toggle('dark-mode');
     
-    // Cambiar el texto del botón dependiendo del modo
     if (body.classList.contains('dark-mode')) {
-        toggleButton.textContent = 'Modo Claro';
+        toggleButton.textContent = '○';
         home.style.display = 'none';
         flor.style.display = 'none';
         home2.style.display = 'block';
         flor2.style.display = 'block';
     } else {
-        toggleButton.textContent = 'Modo Oscuro';
+        toggleButton.textContent = '○';
         home.style.display = 'block';
         flor.style.display = 'block';
         home2.style.display = 'none';
         flor2.style.display = 'none';
     }
 });
+
+
+document.getElementById('home2').addEventListener('click', function() {
+    const contentContainer = document.getElementById('contentContainer');
+    const presentacion = document.getElementById('presentacion');
+
+    contentContainer.style.display = 'none';
+    presentacion.style.display = 'flex';
+    
+});
+
+
+
 
 
 
