@@ -132,16 +132,3 @@ document.getElementById('home').addEventListener('click', function() {
     presentacion.style.display = 'flex';
     
 });
-
-
-function buscarLetra() {
-    event.preventDefault();
-    const cityName = document.getElementById('canflor').value;
-    fetch('https://api.lyrics.ovh/v1/Daddy Yankee/gasolina')
-      .then(response => response.json())
-      .then(data => {
-        if(data.cod == 404){
-          document.getElementById('clima').innerHTML = `<h2>No se encontró cancion</h2>`;
-          return;
-        }
-  })}

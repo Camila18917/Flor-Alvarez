@@ -1,6 +1,10 @@
 <div class="buscadorc">
     <form action="" onsubmit="return buscarLetra(event);">
-        <input type="text" id="cancionb" name="canflor" placeholder="Ingresa el nombre de la cancion" required>
+        <input type="text" id="cancionb" name="canflor" list="recomendadas" placeholder="Ingresa el nombre de la cancion" required>
+        <datalist id="recomendadas">
+            <option value="aaa">aaa</option>
+            <option value="bbb">bbb</option>
+        </datalist>
         <button  id="bc2" type="submit">Buscar</button>
     </form>
 </div>
