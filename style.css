@@ -7,6 +7,51 @@ body {
     background-color: #100713;
 }
 
+
+
+
+
+/* MODO OSCURO */
+
+body.dark-mode {
+    background-color: #d9d9d9;
+    color: rgb(10, 10, 10);
+}
+
+h1.dark-mode {
+    color: white;
+}
+
+body.dark-mode p {
+    color: #2e2e2e; 
+}
+body.dark-mode button {
+    background-color: #4b4747
+}
+
+body.dark-mode #contentContainer p {
+    color: #2e2e2e; 
+}
+
+body.dark-mode .cc2 p{
+    color: #2e2e2e; 
+}
+
+body.dark-mode .cc2 a{
+    color: #2e2e2e; 
+}
+ 
+body.dark-mode .cc1 button{
+    color: #2e2e2e; 
+
+}
+
+
+
+
+
+
+
 nav {
     max-width: fit-content;
     margin: 0 auto;
@@ -43,6 +88,7 @@ button:active {
     background-color: #e756d6
     ;
 }
+
 
 
 

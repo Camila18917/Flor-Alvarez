@@ -43,6 +43,23 @@ document.getElementById('home').addEventListener('click', function() {
 
 
 
+/* Modo Oscuro */
+const toggleButton = document.getElementById('toggleMode');
+const body = document.body;
+
+toggleButton.addEventListener('click', () => {
+    // Alternar la clase 'dark-mode' en el body
+    body.classList.toggle('dark-mode');
+    
+    // Cambiar el texto del botón dependiendo del modo
+    if (body.classList.contains('dark-mode')) {
+        toggleButton.textContent = 'Modo Claro';
+    } else {
+        toggleButton.textContent = 'Modo Oscuro';
+    }
+});
+
+
 
 /* FOOTER */
 class FooterComponent extends HTMLElement {
