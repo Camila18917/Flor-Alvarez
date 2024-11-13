@@ -54,8 +54,16 @@ toggleButton.addEventListener('click', () => {
     // Cambiar el texto del botón dependiendo del modo
     if (body.classList.contains('dark-mode')) {
         toggleButton.textContent = 'Modo Claro';
+        home.style.display = 'none';
+        flor.style.display = 'none';
+        home2.style.display = 'block';
+        flor2.style.display = 'block';
     } else {
         toggleButton.textContent = 'Modo Oscuro';
+        home.style.display = 'block';
+        flor.style.display = 'block';
+        home2.style.display = 'none';
+        flor2.style.display = 'none';
     }
 });
 
