@@ -51,13 +51,13 @@ toggleButton.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     
     if (body.classList.contains('dark-mode')) {
-        toggleButton.textContent = '○';
+        toggleButton.textContent = '☼';
         home.style.display = 'none';
         flor.style.display = 'none';
         home2.style.display = 'block';
         flor2.style.display = 'block';
     } else {
-        toggleButton.textContent = '○';
+        toggleButton.textContent = '☼';
         home.style.display = 'block';
         flor.style.display = 'block';
         home2.style.display = 'none';
@@ -133,3 +133,12 @@ document.getElementById('home').addEventListener('click', function() {
     
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('album1').addEventListener('click', function() {
+        const album1 = document.getElementById('album1');
+        const album2 = document.getElementById('album2');
+
+        album1.style.display = 'none';  // Ocultar el primer álbum
+        album2.style.display = 'block'; // Mostrar el segundo álbum
+    });
+});

@@ -184,10 +184,11 @@ button:active {
     margin-bottom: 2rem;
 }
 .album:hover{
-    background-color:#000000c2;
+    background-color:#8f8f8fc2;
 }
 .album img{
-    width: 10rem;
+    width: 5rem;
+    height: 5rem;
     border: none;
 }
 .album:hover {
