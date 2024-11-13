@@ -133,12 +133,15 @@ document.getElementById('home').addEventListener('click', function() {
     
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('album1').addEventListener('click', function() {
-        const album1 = document.getElementById('album1');
-        const album2 = document.getElementById('album2');
 
-        album1.style.display = 'none';  // Ocultar el primer álbum
-        album2.style.display = 'block'; // Mostrar el segundo álbum
-    });
-});
+function buscarLetra() {
+    event.preventDefault();
+    const cityName = document.getElementById('canflor').value;
+    fetch('https://api.lyrics.ovh/v1/Daddy Yankee/gasolina')
+      .then(response => response.json())
+      .then(data => {
+        if(data.cod == 404){
+          document.getElementById('clima').innerHTML = `<h2>No se encontró cancion</h2>`;
+          return;
+        }
+  })}
