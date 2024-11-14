@@ -32,9 +32,13 @@ body.dark-mode .cc1 button {
     color: #2e2e2e;
 }
 
-body.dark-mode footer.component {
-    color: #f4f4f9;
+.dark-mode #foti p{
+    color: rgb(182, 182, 182);
 }
+body.dark-mode input#cancionb {
+    color:rgb(9, 9, 9);
+}
+
 
 /* NAVBAR */
 nav {
@@ -212,7 +216,9 @@ button:active {
     text-decoration: none;
     color: rgb(151, 151, 151);
 }
-
+#ti{
+    margin: 0;
+}
 form input {
     width: 18rem;
     height: 1rem;
@@ -267,6 +273,9 @@ footer {
 /* MEDIA QUERIES */
 
 @media (max-width: 600px) {
+    #presentacion{
+        display: none;
+    }
     .flor, .texto1, .nombre, .cc1 {
         width: 100%;
         margin-left: 0;
@@ -317,6 +326,10 @@ footer {
         margin: 1px;
 
     }
+    #foti{
+        font-size: 0.8rem;
+        color: rgb(182, 182, 182);
+    }
 }
 
 
@@ -326,16 +339,23 @@ footer {
 
 
 @media (max-width: 768px) {
-    .flor, .texto1, .nombre {
-        width: 80%;
-        margin-left: 0;
-    }
 
+    #presentacion{
+        display: grid;
+    }
+    .flor{
+        margin-left: 0;
+        
+    }
     .texto1 {
-        margin-top: 5rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
         font-size: 1rem;
     }
-
+    #cancionb{
+        max-width: 13rem;
+    }
+    
     .album img {
         width: 7rem;
         height: 7rem;
@@ -348,11 +368,19 @@ footer {
 
     .cc1 {
         width: 100%;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
         box-sizing: border-box;
     }
-    div .p1{
-        display:table-column ;
+    .cc1 input{
+        max-width: 17rem;
     }
+    .cc2 a{
+        margin-bottom: 14px;
+    }
+    div .p1{
+        display:flex ;
+    } 
 }
 
 
